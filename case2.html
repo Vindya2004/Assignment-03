@@ -8,156 +8,186 @@
 
     <style>
 
-             body{
-                 overflow:hidden;
-             }
-             *{
-                 margin:0;
-                 padding:0;
-                 box-sizing:border-box;
-             }
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
 
-             header{
-                 display:flex;
-                 justify-content:space-between;
-                 align-items:center;
-                 padding: 10px 20px;
-                 background:white;
-                 border-bottom: 2px solid #ccc;
-             }
+        body {
+          font-family: Arial, sans-serif;
+          overflow-x: hidden;
+        }
 
-             .logo img{
-                 height:80px;
-             }
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 80px;
+          padding-left: 10px;
+          padding-right: 10px;
+          background: rgb(255, 255, 255);
+          border-bottom: 2px solid #ccc;
+        }
 
-             nav ul{
-                 list-style:none;
-                 display:flex;
-             }
+        .logo img {
+          width: 200px;
+        }
 
-              nav ul li{
-                margin:0 10px;
-            }
+         nav ul {
+              list-style: none;
+              display: flex;
+         }
 
-            nav ul li a{
-                text-decoration:none;
-                font-weight:bold;
-                color:black;
-            }
+        nav ul li {
+          margin: 0 10px;
+         }
 
-            .container{
-                display:flex;
-            }
+        nav ul li a {
+          text-decoration: none;
+          font-weight: bold;
+          color: black;
+         }
 
-            .sidebar{
-                width:200px;
-                height:490px;
-                background:purple;
-                padding: 20px;
+        .container {
+          display: flex;
+          background: rgb(77, 0, 128);
+          min-height: calc(100vh - 120px);
+        }
 
-            }
+        .sidebar {
+          width: 300px;
+          padding: 20px;
+        }
 
-            .sidebar ul li{
-                margin-bottom:30px;
-                list-style:none;
-            }
-               .sidebar ul li a{
-                color:white;
-                text-decoration:none;
-                font-weight:bold;
-            }
+        .sidebar ul {
+          list-style: none;
+        }
 
-            main{
-                flex:1;
-                padding:20px;
-                background:white;
-            }
+        .sidebar ul li {
+          margin-bottom: 15px;
+        }
+        .sidebar ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
 
-            .image-section{
-                position:relative;
-                padding:0 0 0 185px;
-                display:flex;
-                justify-content:space-between;
-                left:-10px;
-                top:-505px;
-            }
+        .main {
+          flex: 1;
+          padding: 20px;
+          background: white;
+        }
 
-            .image-box{
-                position:relative;
-                width:40%;
-                border:1px solid gray;
-                padding:0;
-                right:-20px;
-            }
+        .image-section {
+          display: flex;
+          justify-content: flex-between;
+        }
 
-              .image-box img{
-                width:100%;
-            }
+        .image-box {
+          width: 40%;
+          border: 1px solid gray;
+        }
 
-            .content{
-                width:86%;
-                text-align:justify;
-                position:relative;
-                left:190px;
-                top:-500px;
-            }
-            footer {
-                position:relative;
-                text-align: center;
-                background: gray;
-                color: white;
-                padding: 10px;
-                top:-518px;
-            }
+        .image-box img {
+          width: 100%;
+          height: 100%;
+        }
 
-            p{
-                padding-bottom:20px;
-            }
-
+        .content {
+          margin-top: 20px;
+          text-align: justify;
+        }
+        footer {
+          position: relative;
+          width: 100%;
+          text-align: center;
+          background: gray;
+          color: white;
+          padding: 10px;
+          bottom: 0;
+        }
+        p {
+          padding-bottom: 10px;
+        }
 
     </style>
 
 </head>
 <body>
 <header>
-    <div class="logo">
-        <img src="assets/image/ijse-icon.jpg" alt="logo">
-    </div>
+    <div class="logo"><img src="assets/image/icon-IJSE.jpg" alt="IJSE Logo" /></div>
     <nav>
         <ul>
-            <li><a href="#"> Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
     </nav>
 </header>
+
 <div class="container">
-    <aside class="sidebar">
+    <div class="sidebar">
         <ul>
-            <li><a href="#"> Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
-    </aside>
+    </div>
+
+    <div class="main">
+        <div class="image-section">
+            <div class="image-box"><img src="assets/image/monkeyGif.gif" alt="" /></div>
+            <div class="image-box"><img src="assets/image/monkeyGif.gif" alt="" /></div>
+            <div class="image-box"><img src="assets/image/monkeyGif.gif" alt="" /></div>
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                dicta iste! Cupiditate laborum maiores quidem veniam veritatis? Ab,
+                doloribus fuga fugiat itaque nulla obcaecati omnis praesentium
+                quidem reprehenderit temporibus, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                dicta iste! Cupiditate laborum maiores quidem veniam veritatis? Ab,
+                doloribus fuga fugiat itaque nulla obcaecati omnis praesentium
+                quidem reprehenderit temporibus, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                dicta iste! Cupiditate laborum maiores quidem veniam veritatis? Ab,
+                doloribus fuga fugiat itaque nulla obcaecati omnis praesentium
+                quidem reprehenderit temporibus, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                dicta iste! Cupiditate laborum maiores quidem veniam veritatis? Ab,
+                doloribus fuga fugiat itaque nulla obcaecati omnis praesentium
+                quidem reprehenderit temporibus, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                dicta iste! Cupiditate laborum maiores quidem veniam veritatis? Ab,
+                doloribus fuga fugiat itaque nulla obcaecati omnis praesentium
+                quidem reprehenderit temporibus, voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                dicta iste! Cupiditate laborum maiores quidem veniam veritatis? Ab,
+                doloribus fuga fugiat itaque nulla obcaecati omnis praesentium
+                quidem reprehenderit temporibus, voluptate.
+            </p>
+        </div>
+    </div>
 </div>
-<main>
-    <div class="image-section">
-        <div class="image-box"><img src="assets/image/monkeyGif.gif" alt="monkey"> </div>
-        <div class="image-box"><img src="assets/image/monkeyGif.gif" alt="monkey"> </div>
-        <div class="image-box"><img src="assets/image/monkeyGif.gif" alt="monkey"> </div>
-    </div>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam architecto at consequatur cupiditate dignissimos dolore, error laboriosam modi molestiae necessitatibus officiis pariatur recusandae reiciendis sit ut veniam vero, voluptatum!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam architecto at consequatur cupiditate dignissimos dolore, error laboriosam modi molestiae necessitatibus officiis pariatur recusandae reiciendis sit ut veniam vero, voluptatum!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam architecto at consequatur cupiditate dignissimos dolore, error laboriosam modi molestiae necessitatibus officiis pariatur recusandae reiciendis sit ut veniam vero, voluptatum!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam architecto at consequatur cupiditate dignissimos dolore, error laboriosam modi molestiae necessitatibus officiis pariatur recusandae reiciendis sit ut veniam vero, voluptatum!</p>
-    </div>
-</main>
+
 <footer>
     <p>Developed by IJSE</p>
 </footer>
+
 
 </body>
 </html>
