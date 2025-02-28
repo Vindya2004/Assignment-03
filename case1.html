@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+        body>div.main{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body>div.main:first-child{
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+        body>div.main:nth-child(2){
+            background-color: green;
+            top: 0;
+            right: 0;
+        }
+        body>div.main:nth-child(3){
+            background-color: saddlebrown;
+            bottom: 0;
+            left: 0;
+        }
+        body>div.main:nth-child(4){
+            background-color: purple;
+            bottom: 0;
+            right: 0;
+        }
+
+        body>div.main>div{
+            width :10vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+
+        }
+
+        body>div.main>div>div{
+            position: absolute;
+            width: 40px;
+            aspect-ratio: 1/1;
+            background-color: brown;
+
+            top: 0 ;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body>div:nth-child(5){
+            width: 10vw;
+            aspect-ratio: 1/1;
+            background: white;
+            position: absolute;
+
+            top: 0 ;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        body>div:nth-child(5)>div{
+            width: 5vw;
+            aspect-ratio: 1/1;
+            background: darkred;
+            position: absolute;
+            border-radius: 100%;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        body>.corner{
+            width: 10vw;
+            aspect-ratio: 1/1;
+            background: white;
+            position: absolute;
+        }
+
+        body>div:nth-child(6){
+            top: 0 ;
+            border-bottom-right-radius: 100%;
+
+        }
+
+        body>div:nth-child(7){
+            right: 0;
+            border-bottom-left-radius: 100%;
+
+        }
+
+        body>div:nth-child(8){
+            bottom: 0 ;
+            border-top-right-radius: 100%;
+
+        }
+
+        body>div:nth-child(9){
+            bottom: 0 ;
+            right: 0;
+            border-top-left-radius: 100%;
+
+        }
+
+        body>div:nth-child(10){
+            left: 0;
+            right: 0;
+            top: -5vw;
+            margin: auto;
+            border-radius: 0 0 100% 100%;
+
+
+        }
+
+        body>div:nth-child(11){
+            left: 0;
+            right: 0;
+            bottom: -70px;
+            margin: auto;
+            border-radius: 100% 100% 0 0;
+
+
+
+        }
+
+
+
+        /*body>.corner:first-child{*/
+        /*    top: 0;*/
+        /*}*/
+
+        /*body>.corner:nth-child(2){*/
+        /*    right: 0;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+
+<div>
+    <div></div>
+</div>
+
+<div class="corner"></div>
+<div class="corner"></div>
+<div class="corner"></div>
+<div class="corner"></div>
+
+
+<div class="corner"></div>
+<div class="corner"></div>
+
+</body>
+</html>
